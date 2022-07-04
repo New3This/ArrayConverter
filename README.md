@@ -1,13 +1,19 @@
 # ArrayConverter
 
-Not the best but does <b>my</b> job.
-Was making a hangman game, which picks a random word from an array full of words, to be used.<br>
-The game is included with a multitude of other games in one file, in the GamesInOne repository.
-<h2>The converter has two options to print an array:</h2>
+Not the best but does <b>my</b> job:planned on copy and pasting word lists online but didn't want to individually quote and space each word to make the array, so I made this. <br>
+<i>The use of this is found in the "GamesInOne" repository, where I use this "tool/program" to create an array for my hangman game.</i>
+<h2>The converter has two ways of printing an array:</h2>
 1. Input one word at-a-time<br>
-2. Input a bunch of words in one input
+2. Input a bunch of words in one input <br>
+<h2> It also has two options of printing the array: </h2>
+1. Curly brackets
+2. Square brackets
+
+For example:<br>
+Input: sodhfsdhof sdofsodhf oisdfosh<br>
+Output for option 1: {"sodhfsdhof", "sdofsodhf", "oisdfosh"}<br>
+Output for option 2: ["sodhfsdhof", "sdofsodhf", "oisdfosh"]<br>
 
 <h2>Limitations</h2>
-The second option works however has current limitations:<br>
-- Doesn't remove fullstops<br>
-- Account for semi-colons (plan on modifying the delimiter to fix this, however, right now this isn't an issue that concerns me)
+- Delimiter is limited to whitespaces right now<br>
+
