@@ -25,7 +25,7 @@ public class arrayConverter {
                 while (!check.equals("1")) {
                     check = String.valueOf(sc.next());
                     if (!check.equals("1")) {
-                        box += String.valueOf(check)+ ", ";
+                        box += "\""+String.valueOf(check)+"\""+", ";
                     }
                 }
                 System.out.println("{" + box.substring(0, box.length()-2) + "}");
@@ -45,6 +45,8 @@ public class arrayConverter {
             }
 
         }
+        sc.close();
     }
+    
 
 }
