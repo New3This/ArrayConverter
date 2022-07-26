@@ -19,14 +19,14 @@ public class arrayConverter {
             start=true;
             while (start) {
                 System.out.println("You can do the following with this program, to convert words into an array:\n" + op1+"\n* "+op2);
-                System.out.println("How would you like your array, with curly brackets (maybe to initalise arrays in java) or square brackets?");
+                System.out.println("\nHow would you like your array, with curly brackets (maybe to initalise arrays in java) or square brackets?");
                 System.out.println("1. Curly brackets\n2. Square brackets");
                 System.out.println("Option 1 or 2?");
                 char confirmation = sc.next().toUpperCase().charAt(0);
                 if (confirmation == '1') {
                     System.out.println("Enter your words and type 1, once finished to print the array");
                     while (!check.equals("1")) {
-                        check = String.valueOf(sc.next());
+                        check = String.valueOf(sc.next()).toLowerCase();
                         if (!check.equals("1")) {
                             box += "\""+String.valueOf(check)+"\""+", ";
                         }
@@ -42,7 +42,7 @@ public class arrayConverter {
                 if (confirmation == '2') {
                     System.out.println("Enter your words and type 1, once finished to print the array");
                     while (!check.equals("1")) {
-                        check = String.valueOf(sc.next());
+                        check = String.valueOf(sc.next()).toLowerCase();
                         if (!check.equals("1")) {
                             list.add(check);
                         }
