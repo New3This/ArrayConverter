@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-s
 
 public class arrayConverter {
     private static boolean exit = true;
